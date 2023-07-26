@@ -1,0 +1,44 @@
+.skeleton--loader-background {
+  width: 60%;
+  height: 300px;
+  display: inline-block;
+  border: 25px solid #e4e5eb;
+}
+.skeleton--loader-card,
+.skeleton--h1,
+.skeleton--h2,
+.skeleton--h3 {
+  display: block;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    #ecedf1;
+  background-repeat: repeat-y;
+  background-size: 50px 200px;
+  background-position: 0 0;
+  animation: shine 2s infinite;
+}
+.skeleton--loader-card {
+  margin: 10px;
+  height: 150px;
+  width: 60%;
+}
+.skeleton--h1,
+.skeleton--h2 {
+  margin: 10px;
+  height: 30px;
+  width: 90%;
+}
+.skeleton--h3 {
+  margin-left: 10px;
+  height: 30px;
+  width: 40%;
+}
+@keyframes shine {
+  to {
+    background-position: 100% 0, /* move highlight to right */ 0 0;
+  }
+}
